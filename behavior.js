@@ -1,3 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-	alert('hello');
+
+	var thumbnailElement = document.getElementById("smart_thumbnail");
+	thumbnailElement.className = "";
+	thumbnailElement.addEventListener("click", function() {
+		if (thumbnailElement.className == "") {
+			thumbnailElement.className == "big";
+		}
+	});
 });
+
+
