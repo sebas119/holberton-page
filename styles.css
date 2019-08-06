@@ -123,3 +123,58 @@ footer {
     text-align: center;
     background-color: #cccccc;
 }
+
+h1, h2, p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+hr {
+    text-align: center;
+}
+
+/* tweets.html styles */
+
+.tweet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* behavior.html styles */
+img.big {
+    width: 600px;    
+}
+
+img.small {
+    width: 100px;    
+}
+
+
+.social-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.fb-share {
+    order: 0;
+    flex-grow: 1;
+}
+
+.twitter-share {
+    order: 1;
+    flex-grow: 1;
+}
+
+.social-item {
+    flex: 0 0 50%;
+    margin-bottom: 5px;
+}
