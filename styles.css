@@ -64,6 +64,15 @@ button {
     text-decoration: none;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 99999;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -71,6 +80,41 @@ header {
     padding: 30px 10%;
     background-color: #24252A;
     height: 100px;
+    position: sticky;
+}
+
+header ul li a {
+    color: #ffffff;
+	text-decoration: none;
+    transition: color 0.5s;    
+}
+
+header nav ul li .underline {
+    height: 3px;
+    background-color: transparent;
+    width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+    margin: 0 auto;
+}
+
+header nav ul li.active .underline {
+    width: 100%;
+    background-color: white;
+}
+
+header nav ul li:hover .underline {
+    width: 100%;
+    background-color: white;
+}
+
+header ul li:active a {
+    transition: none;
+    color: rgba(255,255,255,0.76);
+}
+
+header ul li:active .underline {
+    transition: none;
+    color: rgba(255,255,255,0.76);
 }
 
 .nav__links {
@@ -86,9 +130,7 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover {
-    color: #0088a9;
-}
+
 
 button {
     padding: 9px 25px;
@@ -104,7 +146,7 @@ button:hover {
 }
 
 .gfa {
-    width: 17%;
+    width: 20%;
     text-align: center;
     padding: 20px;
 
@@ -120,12 +162,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;    
+    flex-shrink: 0;
     text-align: center;
     background-color: #cccccc;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     text-align: center;
 }
 
@@ -141,6 +185,7 @@ hr {
     text-align: center;
 }
 
+
 /* tweets.html styles */
 
 .tweet {
@@ -151,11 +196,11 @@ hr {
 
 /* behavior.html styles */
 img.big {
-    width: 600px;    
+    width: 600px;
 }
 
 img.small {
-    width: 100px;    
+    width: 100px;
 }
 
 
@@ -178,4 +223,18 @@ img.small {
 .social-item {
     flex: 0 0 50%;
     margin-bottom: 5px;
+}
+
+/* body */
+
+hr {
+    height: 3px;
+    color: #ed1d61;
+    background: #ed1d61;
+    font-size: 0;
+    border: 0;
+    width: 150px;
+    text-align:center;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }

@@ -12,33 +12,48 @@
 </head>
 
 <body class="works_on_smartphone">
-    <header>
-        <div class="gfa">
-            <a href="/index.html"><img class="logo" src="https://www.holbertonschool.com/holberton-logo.png"
-                    alt="logo"></a>
-        </div>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/tweets.html">Tweets</a></li>
-                <li><a href="/behavior.html">Animation</a></li>
-            </ul>
-        </nav>
-        <a class="cta" href="#"><button>Contact</button></a>
-        <div class="social-button">
-            <div class="fb-share-button fb-share social-item" data-href="https://developers.facebook.com/docs/plugins/"
-                data-layout="button" data-size="small"><a target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
-                    class="fb-xfbml-parse-ignore">Share</a>
+    <div class="sticky">
+        <header>
+            <div class="gfa">
+                <a href="/index.html"><img class="logo" src="https://www.holbertonschool.com/holberton-logo.png"
+                        alt="logo"></a>
             </div>
-            <div class="twitter-share social-item">
-                <a href="https://twitter.com/HolbertonCOL?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                    data-show-count="false">Follow @HolbertonCOL</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <nav>
+                <ul class="nav__links">
+                    <li class="nav-link"><a href="/index.html">Home</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-link"><a href="/tweets.html">Tweets</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-link active"><a href="/behavior.html">Animation</a>
+                        <div class="underline"></div>
+                    </li>
+                </ul>
+            </nav>
+            <a class="cta" href="#"><button>Contact</button></a>
+            <div class="social-button">
+                <div class="fb-share-button fb-share social-item"
+                    data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small"><a
+                        target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                        class="fb-xfbml-parse-ignore">Share</a>
+                </div>
+                <div class="twitter-share social-item">
+                    <a href="https://twitter.com/HolbertonCOL?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                        data-show-count="false">Follow @HolbertonCOL</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="social-item">
+                    <!-- Place this tag where you want the button to render. -->
+                    <a class="github-button" href="https://github.com/sebas119"
+                        aria-label="Follow @sebas119 on GitHub">Follow
+                        @sebas119</a>
+                </div>
             </div>
-        </div>
 
-    </header>
+        </header>
+    </div>
     <main>
         <article>
             <h1>Click to toggle zoom</h1>
@@ -55,6 +70,8 @@
         </div>
     </footer>
 
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0">
     </script>
