@@ -85,8 +85,8 @@ header {
 
 header ul li a {
     color: #ffffff;
-	text-decoration: none;
-    transition: color 0.5s;    
+    text-decoration: none;
+    transition: color 0.5s;
 }
 
 header nav ul li .underline {
@@ -109,12 +109,12 @@ header nav ul li:hover .underline {
 
 header ul li:active a {
     transition: none;
-    color: rgba(255,255,255,0.76);
+    color: rgba(255, 255, 255, 0.76);
 }
 
 header ul li:active .underline {
     transition: none;
-    color: rgba(255,255,255,0.76);
+    color: rgba(255, 255, 255, 0.76);
 }
 
 .nav__links {
@@ -129,8 +129,6 @@ header ul li:active .underline {
 .nav__links li a {
     transition: all 0.3s ease 0s;
 }
-
-
 
 button {
     padding: 9px 25px;
@@ -234,7 +232,7 @@ hr {
     font-size: 0;
     border: 0;
     width: 150px;
-    text-align:center;
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 15px;
 }
